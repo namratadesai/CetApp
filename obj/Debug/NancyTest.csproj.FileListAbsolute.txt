@@ -1,0 +1,5 @@
+C:\Users\shreyas.bs\htmlforapp\hmtestapp\bin\NancyTest.dll
+C:\Users\shreyas.bs\htmlforapp\hmtestapp\bin\NancyTest.pdb
+C:\Users\shreyas.bs\htmlforapp\hmtestapp\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\shreyas.bs\htmlforapp\hmtestapp\obj\Debug\NancyTest.dll
+C:\Users\shreyas.bs\htmlforapp\hmtestapp\obj\Debug\NancyTest.pdb

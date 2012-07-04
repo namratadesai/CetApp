@@ -1,0 +1,6 @@
+$(document).ready(function(){
+	$('.likeJS').bind('click',function(){
+		$(this).next().show();
+		$(this).hide();
+	});					
+});

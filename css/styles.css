@@ -1,0 +1,225 @@
+body{ margin:0px; padding:0px; font-family:tahoma; font-size:75%}
+input, img, textarea,p,h1{ margin:0px; padding:0px; border:0px ;font-family:tahoma}
+a{ margin:0px; padding:0px; text-decoration:none; color:#3b5998}
+.wrapperDiv{ /*width:59.5%;width:800px;*/ width:790px;  margin:0px auto; clear:both;  height:auto }
+.mainMenu a.selected{  color:#000; font-size:0.9em; font-weight:bold}
+.mainMenu a{  color:#3b5998; font-size:0.9em; font-weight:bold}
+.mainMenu{ margin-top:10px}
+.menu{ float:left; margin-right:20px;}
+.menu span{ position:relative; top:-2px}
+.questionArea{background-color:#e9fee6; color:#000; border:1px solid #e7ebf2; clear:both; float:left;padding:7px; width:98%}
+.questionArea textarea{ color:#000; background-color:#fff; font-size:0.9em ; overflow:auto}
+.questionArea input{float:right; background-color:#006699; color:#fff; font-size:0.8em; padding:3px; margin:5px 0px 5px 0px; cursor:pointer}
+.questionAreaWrapper{padding:10px 0px 5px 0px; clear:both; padding-bottom:5px; border-bottom:1px solid #e7ebf2; float:left; width:100%; margin-bottom:5px; position:relative}
+.rightColout{width:25%; float:left;}
+.tabArea{width:74%; margin-right:5px; float:left; clear:both }
+.headingDiv{background-color:#e3f1f8;  font-weight:bold; font-size:0.8em; padding:2px }
+.headingDiv span{ position:relative; top:-4px; left:3px}
+.num{ font-weight:bold;  float:left; width:40%}
+.activityLinks{ margin-bottom:5px}
+.activity , .activityLinks , .leaderboardBlock{ padding:3px;font-size:0.8em;}
+.promoBlock{border:1px solid #e7ebf2; margin-bottom:5px; }
+.activity a{ display:block}
+.time , .postedTime{ color:#b4b2b2}
+.leaderboardBlock { clear:both; width:100%; margin-bottom:3px; min-height:27px} 
+.leaderboardBlock img.user{ float:left; margin-right:3px; display:block }
+.leaderboardBlock span{ font-weight:bold}
+.leaderboardBlock a{ font-weight:bold}
+.pointsIcon{position:relative; top:3px}
+.leaderboardBlock a.question{ font-weight:normal !important}
+.tabs div{ float:left;  background-color:#e3f1f8; padding:0px 0px 0px 5px;  font-size:0.8em; font-weight:bold; cursor:pointer}
+.tabs div span{ position:relative; top:-6px}
+.tabs div.selected{ background-color:#006699 !important; color:#fff}
+.postBlock{ padding:10px 0px 10px 10px; float:left;}
+.commentsBlock{font-size:0.9em;float:left; width:90%}
+.commentsBlock a.name{ font-weight:bold;font-size:1.1em }
+.commentsBlock a.name span{ font-weight:normal; font-size:0.9em}
+.title{ font-weight:bold}
+.commentsBlock img{ margin-right:3px}
+.commentsBlock p{ margin-top:3px; clear:both}
+.like{ background-color:#edeeef; padding:3px; margin-top:1px; float:left; clear:both; width:98%}
+.likes{ float:right}
+.likes img{position:relative; top:2px}
+.postedTime{ float:right; font-size:0.9em; padding-right:3px}
+.like input{ width:99%; font-size:1.1em; padding:2px}
+.userPic{float:left; width:10%}
+.like .commentsBlock{font-size:1.0em !important}
+.like a{ font-size:0.9em}
+.commentBlockJS{ display:none}
+.likeJS{ color:#3b5998; cursor:pointer;font-size:0.9em}
+.seperator{border-bottom:1px solid #edeeef; clear:both; margin:10px 0px 5px 0px; padding-top:10px}
+.pagination span{ display:inline-block;   padding:3px 5px 3px 5px; font-size:0.8em; background-color:#edeeef}
+.pagination span.selected{ background-color:#fff !important; border:1px solid #edeeef; font-weight:bold}
+.pagination{float:right; margin:10px 10px 10px 0px; clear:both}
+.tabcontent{ border:1px solid #edeeef; clear:both; float:left; width:99%}
+.contentSection{margin-top:5px}
+.searchResultsBlock{border:1px solid #c1c9dc; font-size:0.9em; padding:5px; margin-top:5px; clear:both; display:none; float:left; width:98%;}
+.searchResultsBlock p{ font-weight:bold; margin-bottom:8px }
+.similarQuest img{ margin-right:3px}
+.similarQuest{ padding:3px;}
+.searchResultsBlock input{ font-size:0.9em; margin-right:2px;}
+.questionDialog{position:absolute; width:450px; height:250px; border:2px solid #006699; background-color:#fff; margin:auto auto; left:21%; display:none; padding:5px; font-size:0.9em; z-index:10}
+.questionDialog p{ font-size:1.0em; font-weight:bold; margin-bottom:10px}
+.questionDialog .titleBox{border:1px solid #c1c9dc; width:100%; background-color:#fff; color:#000; margin:0px; padding:0px;font-size: 1.0em;}
+.questionDialog textarea{font-size:0.9em;border:1px solid #c1c9dc; width:100% }
+.questionDialog input{background-color: #006699; color: #FFFFFF; cursor: pointer; float: right; font-size: 1.0em; margin: 5px 0;
+    padding: 3px; margin:10px 2px 0px 0px}
+.errorMsg{ color:#F00; display:none;}
+.questionDetails{position:absolute; width:550px; border:2px solid #006699; background-color:#fff; margin:auto auto; left:15%; display:none; padding:5px; font-size:1.0em; z-index:10}
+.closeDetails { float:right; cursor:pointer;background-color: #006699;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 0.8em;
+    margin-top: 5px 5px 0px 0px;
+    padding: 3px;}
+.peopleLike{ font-size:0.95em; position:relative; top:-2px}	
+.allComments{ display:none}
+.featuredAnswer{ background-color:#e9fee6}
+.adminIcon{position:relative; top:3px}
+.subComments{ margin-left:10px; display:none; font-size:1.0em}
+.subComments input{ font-size:1.0em}
+
+/*Announcement Details*/
+.logoDiv{ border-bottom:1px solid #83b817; padding:10px 0px 10px 0px}
+.navigation{ float:right; padding-top:10px; clear:both}
+.navigation a{ text-decoration:underline}
+.announcementDetails{clear:both; padding-top:10px}
+.user{ float:left}
+.announcement{width:89.4%; background-color:#e3f1f8; float:left; padding:10px}
+.announcement h1{ font-size:1.1em; margin-bottom:10px}
+.announcement .name{ padding-bottom:10px}
+.announcement .name a{ font-weight:bold}
+.announcement p{ margin:0px 0px 10px 0px; font-size:0.9em;width:90%}
+.announcement ul{ margin:0px}
+.announcement ul li{ font-size:0.9em;margin-left:-20px;width:90%; margin-bottom:5px}
+.likeBtn{ background:url(../images/likeButton.gif); padding:3px 4px 2px 20px; color:#365899; font-size:0.9em; min-width:48px; min-height:21px; cursor:pointer}
+.shareBtn{ background:url(../images/shareButton.gif); padding:3px 7px 2px 7px; color:#365899; font-size:0.9em; min-width:48px;min-height:21px; cursor:pointer}
+.commentBtn,.productCommentBtn{background:url(../images/commentButton.gif); padding:3px 8px 2px 7px; color:#365899; font-size:0.9em; min-width:66px;min-height:21px; cursor:pointer}
+.buttonsDiv{ float:right; padding-top:10px; width:100%; text-align:right}
+.announcementComments{ float:left; clear:both; margin-top:10px; }
+.announcementComment{width:90%; background-color:#FFF; float:left; }
+.commentDescription{width:90%; float:left; border-bottom:1px solid #e7f3f9; padding:0px 0px 10px 0px; font-size:0.9em }
+.commentDescription .name a{ font-weight:bold}
+.yourComment{width:85%; float:right; margin-top:20px; clear:both}
+.yourComment textarea{width:100%; border:1px solid #e5f2f8; font-size:0.9em}
+.postCommentBtn{ background-color: #006699;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 0.8em;
+    margin: 5px 0;
+    padding: 3px;}
+.yourComment p{ font-weight:bold; font-size:0.8em}	
+.admintabArea{width:100%; margin-right:5px; float:left; clear:both; }
+
+/*Admin Page*/
+.tabContents{border:1px solid #d8dfea; clear:both; width:97%; padding:10px}
+.tabContents input{ border:1px solid #d8dfea;}
+.uploadButton,.saveBtn{ background-color: #006699;
+    color: #FFFFFF;
+    cursor: pointer;    
+    font-size: 0.8em;
+    margin: 5px 0px 0px 10px;
+    padding: 3px; width:auto !important}
+.saveBtnInternal,.saveFeaturedProduct{ background-color: #006699;
+    color: #FFFFFF;
+    cursor: pointer;    
+    font-size: 0.8em;  
+	margin-top:10px; 
+    padding: 3px; width:auto !important; float:right}	
+	
+.radio{ margin-left:20px}	
+.fieldSet{ margin-top:10px}
+legend{ font-weight:bold; font-size:0.9em}
+.fieldSet input{ border:1px solid #d8dfea; width:40%;  }
+.internal{ display:none}
+#title{ margin-right:20px}
+.fieldSet textarea{width:99%; border:1px solid #c4cde0}
+.announcementItems{border:1px solid #c4cde0; margin-top:20px; float:left;clear:both; width:99%}
+.even{ clear:both; background-color:#ffffff; padding:3px; float:left;width:99.1%;font-size:0.9em}
+.col1{width:10%; float:left}
+.col2{width:70%; float:left}
+.col3{width:15%; float:left}
+.odd{clear:both; background-color:#e7ebf2; padding:3px;float:left;width:99.1%;font-size:0.9em}
+.col3 a{ margin-right:10px}
+.heading{ clear:both; background-color:#d5e0f7; padding:3px; float:left;width:99.1%; font-weight:bold}
+.field_set{border-color:#c4cde0;
+    border-style: solid;
+	border-width:1px; clear:both; font-size:0.9em
+ }
+ .customerCatagory p{ margin:0px; }
+ .checkOptions{width:50%; float:left; margin-bottom:10px}
+ .col4{ width:20%; float:left; text-align: center}
+ .productCat,.brandCat,.series,.model{ display:none}
+ .featuredProducts p{ margin-bottom:10px; font-weight:bold }
+ .field_set input{ margin-right:3px}
+ .searchDIv{ float:right; clear:both; margin-right:1px}
+ .searchDIv #searchProduct{border:1px solid #c4cde0}
+ .searchProduct{ background:url(../images/searchIcon.gif) no-repeat; width:17px; height:17px; margin-left:3px}
+ .searchResults{ display:none; clear:both}
+ .profileDetails{width:87%; float:left}
+ .profileDetails p{ font-weight:bold; font-size:1.7em}
+ .profileDetails div{ padding-bottom:3px; font-size:0.9em}
+ .profileDetails div img{ margin-right:3px}
+  .profileDetails div span{  display:inline-block; width:18px}
+  .userBlock{clear:both;background:#e3f1f8; float:left; width:97.5%; margin-top:20px; margin-left:20px; min-height:100px; padding:5px 0px 5px 0px}
+ .userProfilePic{width:15%; float:left;position:relative; margin:-30px 0px 0px -20px}
+ .featuredProductPromo{float:left; width:20%} 
+ .featuredProductPromo .leaderboardBlock img{ float:left;}
+ .featuredProductPromo .promoBlock{  min-height:256px}
+ .adminOptions{float:right; clear:both; padding-right:3px}
+ .adminIframe{width:100%; min-height:500px}
+ .productIframe{width:100%; min-height:270px}
+ label span{ color:#F00}
+ .disabled{ background-color:#999}
+ .floatRt{ float:right}
+ .addFeaturedProdut input{ border:1px solid #d8dfea; margin-bottom:10px; }
+ .addFeaturedProdut textarea{border:1px solid #d8dfea;margin-bottom:10px }
+ .addFeaturedProdut label{ display:block; width:20%; float:left; text-align:right; padding-right:5px}
+ .errorDiv,.confirmationDiv,.confirmationDelete{border:2px solid #006699; position:absolute; clear:both; top:5%; left:22%; width:250px; height:150px; background-color:#fff; padding:20px; text-align:center; display:none; z-index:10}
+ .announcementComments .user{ width:8%}
+ .overlay{ width:100%; min-height:700px; background-color:#fff; position:absolute;top:0px; left:0px; display:none; opacity:0.5}
+ .productType{float:left; width:15%; text-align:right; padding-right:5px}
+ .productType a{ color:#006; background:transparent; display:inline-block; margin-bottom:13px}
+ .productType a:hover,.productType a.selected{ color:#83b817}
+ .productBlock{ padding-top:20px;}
+ .productImage{float:left; width:70%}
+ 
+.ProductPromoBlock{clear:both; float:left; width:98.9%;border:1px solid #e7ebf2; margin-bottom:5px;}
+.FeaturedProduct{ float:left; width: 17%; margin-right:10px}
+.ProductPromoBlock{ margin-top:5px}
+.productCategory{clear:both; float:left; width:100%; margin-top:10px}
+.productCategory h2{ font-size:0.9em; margin:0px; padding:0px}
+.categoryProduct{float:left; width:65%; border:1px solid #e7ebf2; margin-right:5px}
+.catDescription{float:left; width:33%; border:1px solid #e7ebf2;height:280px}
+.productImg{float:left; width: 84px; margin-right:27px; text-align:center; cursor:pointer}
+.productsDiv{width:98.7%; float:left; clear:both; display:block; background-color:#fff; padding:3px; margin-bottom:30px}
+.leftArrow{float:left; width:5%; padding-left:10px}
+.leftArrow img,.rightArrow img{ padding-top:20px; cursor:pointer}
+
+.productContainer{float:left; overflow:hidden;height:90px; width:446px; position:relative}
+.rightArrow{float:left; width:4%;}
+.categoryProduct .heading,.catDescription .heading{background-color:#e3f1f8;font-size:0.9em;padding:3px}
+.prodDesc{padding:10px; font-size:0.9em}
+.productBtn{ background-color: #006699;color: #FFFFFF;cursor: pointer;font-size: 0.8em;	margin-top:10px;padding: 3px; width:auto }	
+.productBtns{clear:both;text-align:right}	
+.productComment{ padding-top:10px}	
+.productComment input{ border:1px solid #e7ebf2; width:80%; margin-top:5px; margin-left:60px; margin-bottom:10px; font-size:0.9em; padding:3px }
+.floatLt{ float:left}
+.productComments{ clear:both; display:none; width:99%}
+.productComments .announcementComments{ background-color:#e3f1f8}
+.breadCrumb h1{color:#83b817; clear:both; font-size:0.9em}
+.alignCenter{ text-align:center}
+#slideInner{position:absolute; left:0px}
+.commentArrow{position:relative; left:0px; top:1px; z-index:1}
+.productImg p.selected{ font-weight:bold}
+.mainTabJS{ position:relative}
+.allAnnouncementItems{border:1px solid #c4cde0;float:left;clear:both; width:99%}
+.allAnnouncementItems a{ font-weight:bold; font-size:1.1em}
+.allAnnouncementItems p{ color: #666; font-size:0.9em}
+.allAnnouncementItems .col1{ width:6%;}
+.allAnnouncementItems .col2{ width:93%;}
+.seeAnnouncements{ text-align:right }
+.seeAnnouncements a{ font-size:0.9em;}
+ .homePagetabs{width:100%; min-height:734px; height:auto}

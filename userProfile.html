@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="StyleSheet" href="css/styles.css" type="text/css" />
+<script src="js/jqueryJS.js" type="text/javascript" ></script>
+<script src="js/common.js" type="text/javascript" ></script>
+<style type="text/css">
+body {overflow:hidden;} /*This is handy for removing horizontal/vertical scrollbars as we won't need them if we autosize; */
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+FB.init({
+appId : '158662144268573',
+status : true, // check login status
+cookie : true, // enable cookies to allow the server to access the session
+xfbml : true // parse XFBML
+});
+
+window.fbAsyncInit = function() {
+FB.Canvas.setAutoResize();
+}
+
+</script>
+
+<div class="wrapperDiv ">
+	<div class="logoDiv">
+	<img src="images/logo.gif" alt="acer" title="acer"/>
+    </div>    
+    <div class="navigation">
+    	<a href="landingPage.html">Back</a>
+    </div>
+    <div class="userBlock">
+    	<div class="userProfilePic">
+        	<img src="images/userProfilePic.png"/>
+        </div>
+        <div class="profileDetails">
+        	<p>Name Name </p>
+            <div>Joined October 21, 2010</div>
+            <div><span><img src="images/pointsIcon.gif"/></span>65 points</div>
+            <div><span><img src="images/questionIcon.gif"/></span>2 questions</div>
+            <div><span><img src="images/idea.gif"/></span>1 idea</div>
+            <div><span><img src="images/issueIcon.gif"/></span>0 issues</div>
+        </div>
+    </div>
+    <!-- content section -->
+     <div style="clear:both; float:left; width:100%; margin-top:20px">
+     <div style="float:left; width:80%; ">     	
+			<div class="tabs">
+				<div class="selected tabJS" id="recentActivities"><span>Recent Activities</span><img src="images/tab_s.gif"/>
+                </div>
+				<div id="questions " class="tabJS"><span >Questions</span><img src="images/tab_ns.gif"/></div>
+				<div id="ideas"  class="tabJS"><span>Ideas</span><img src="images/tab_ns.gif"/></div>
+				<div id="issues"  class="tabJS"><span >Issues</span><img src="images/tab_ns.gif"/></div>
+				<div id="testimonials"  class="tabJS"><span >Testimonials</span><img src="images/tab_ns.gif"/></div>
+				<div id="products"  class="tabJS"><span >Products</span><img src="images/tab_ns.gif"/></div>
+			</div>
+			<div class="tabcontent">
+                <iframe src="recentActivities.html" frameborder="0" class="homePagetabs"  style="width:100%; min-height:734px; height:auto"></iframe> 
+			</div>		
+     </div>
+     <div style="" class="featuredProductPromo">
+     	<div  class="promoBlock">
+				<div class="headingDiv" ><img src="images/productIcon.gif"/><span>Featured Products</span></div>
+				<div class="leaderboardBlock">
+					 <img src="images/featuredProduct.png"/>
+					 <a href="" title="">Name</a>
+					 
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/featuredProduct.png" />
+					 <a href="" title="">Name</a>
+					
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/featuredProduct.png" />
+					 <a href="" title="">Name</a>
+					
+				</div>	
+                <div class="leaderboardBlock">
+					 <img src="images/featuredProduct.png" />
+					 <a href="" title="">Name</a>
+					
+				</div>	
+                <div class="leaderboardBlock">
+					 <img src="images/featuredProduct.png" />
+					 <a href="" title="">Name</a>
+					
+				</div>				
+			</div>
+     </div>
+     </div>
+     <!-- content section ends -->   
+     <div class="navigation">
+    	<a href="landingPage.html">Back</a>
+    </div>
+</div>
+	
+</body>
+</html>

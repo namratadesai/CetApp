@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="StyleSheet" href="css/styles.css" type="text/css" />
+<script src="js/jqueryJS.js" type="text/javascript" ></script>
+<script src="js/common.js" type="text/javascript" ></script>
+<script type="text/javascript">
+function runScript(e) {
+    if (e.keyCode == 13) {
+        if($('#searchProduct').val()=="")
+		{
+			 return false;
+		}
+		else
+		{
+			$('.searchProduct').click();
+		}
+       
+    }
+}
+
+</script>
+</head>
+
+<body>	
+
+<div class="featuredProducts">
+<p>Selet product to add as a featured product</p>
+</div>
+<div class="searchDIv">
+	<label>Search: </label><input type="text" id="searchProduct" onkeypress="return runScript(event)"/><input type="button" style="" class="searchProduct"/>
+</div>	
+    
+ <fieldset class="field_set customerCat" >  
+    <legend>Select Customer Category</legend>
+    <input type="radio" id="consumer"  name="group1"  /><label  for="consumer" >Consumer</label> 
+    <input type="radio" id="business" class="radio" name="group1" /><label for="consumer">Business</label>
+ </fieldset> 
+ <fieldset class="field_set productCat" >  
+    <legend>Select Product Category</legend>
+    <select class="productCatOptions">
+    	<option>Notebook</option>
+        <option>Ultra</option>
+        <option>Netbook</option>
+    </select>
+ </fieldset> 
+ <fieldset class="field_set brandCat" >  
+    <legend>Select Brand Category</legend>
+    <input type="radio" id="Aspire"  name="group2"  /><label  for="Aspire" >Aspire</label> 
+    <input type="radio" id="TravelMate" class="radio" name="group2" /><label for="TravelMate">TravelMate</label>    
+ </fieldset>
+ <fieldset class="field_set series" >  
+    <legend>Select Series</legend>
+     <select class="seriesOption">
+    	<option>Aspire</option>
+        <option>Aspire TimelineX</option>
+        <option>Aspire V3</option>
+        <option>Aspire E1</option>
+        <option>Aspire V5</option>
+        <option>Aspire TimelineX</option>
+    </select>    
+ </fieldset> 
+ <fieldset class="field_set model" >  
+    <legend>Select Model</legend>
+    	
+     <div class="checkOptions"><input type="checkbox" id="chk1"/><label for="chk1">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk2"/><label for="chk2">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk3"/><label for="chk3">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk4"/><label for="chk4">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     
+     <div class="checkOptions"><input type="checkbox" id="chk5"/><label for="chk5">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk6"/><label for="chk6">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk7"/><label for="chk7">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk8"/><label for="chk8">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+    <input type="button" class="saveFeaturedProduct reset" value="Reset"><input type="button" class="saveFeaturedProduct" value="Add featured product">
+ </fieldset> 
+  <div class="searchResults">
+  <p>Search Results</p>
+  <fieldset class="field_set  " >  
+    <legend>Select Model</legend>
+    	
+     <div class="checkOptions"><input type="checkbox" id="chk1"/><label for="chk1">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk2"/><label for="chk2">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk3"/><label for="chk3">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk4"/><label for="chk4">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     
+     <div class="checkOptions"><input type="checkbox" id="chk5"/><label for="chk5">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk6"/><label for="chk6">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk7"/><label for="chk7">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+     <div class="checkOptions"><input type="checkbox" id="chk8"/><label for="chk8">AS5253-E352G50Mnkk (LX.RD50C.031)</label></div>
+    <input type="button" class="saveFeaturedProduct reset" value="Reset"> <input type="button" class="saveFeaturedProduct" value="Add featured product">
+ </fieldset> 
+ </div>
+ <div class="announcementItems">
+
+ 	<div class="heading">
+    	<div class="col2">Featured Product</div>
+        <div class="col4">Delete featured product</div>       
+    </div>
+ 	<div class="even">
+    	<div class="col2">AS5750Z-B942G50Mnkk(LX.RL801.009)</div>
+        <div class="col4"><a href="javascript:void(0)" class="deleteAnnouncement"><img src="images/delete.gif" alt="edit"/></a></div>
+       
+    </div>
+    <div class="odd">
+    	<div class="col2">AS5750Z-B942G50Mnkk(LX.RL801.009)</div>
+        <div class="col4"><ahref="javascript:void(0)" class="deleteAnnouncement"><img src="images/delete.gif" alt="edit"/></a></div>        
+    </div>
+    <div class="even">
+    	<div class="col2">AS5750Z-B942G50Mnkk(LX.RL801.009)</div>
+        <div class="col4"><a href="javascript:void(0)" class="deleteAnnouncement"><img src="images/delete.gif" alt="edit"/></a></div>
+       
+    </div>
+    <div class="odd">
+    	<div class="col2">AS5750Z-B942G50Mnkk(LX.RL801.009)</div>
+        <div class="col4"><a href="javascript:void(0)" class="deleteAnnouncement"><img src="images/delete.gif" alt="edit"/></a></div>        
+    </div>
+  </div>
+  
+ 
+      
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<link rel="StyleSheet" href="css/styles.css" type="text/css" />
+<script src="js/jqueryJS.js" type="text/javascript" ></script>
+<script src="js/common.js" type="text/javascript" ></script>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<style type="text/css">
+body {overflow:hidden;} /*This is handy for removing horizontal/vertical scrollbars as we won't need them if we autosize; */
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+FB.init({
+appId : '158662144268573',
+status : true, // check login status
+cookie : true, // enable cookies to allow the server to access the session
+xfbml : true // parse XFBML
+});
+
+window.fbAsyncInit = function() {
+FB.Canvas.setAutoResize();
+}
+
+</script>
+
+<div class="wrapperDiv">
+
+	<div>
+		<img src="images/banner.jpg"  alt="Acer" title="Acer"/>
+	</div>
+	<!-- main menu -->
+	<div class="mainMenu">
+		<div class="menu">
+			<a href="javascript:void(0)" id="askQuestion" class="selected  mainTabJS"  title=""><img src="images/questionAnswer.gif" alt="question and answer"/>  
+            <span>Ask Question</span></a>
+		</div>
+		<div class="menu">
+			<a href="javascript:void(0)" id="shareIdea" class=" mainTabJS" title=""><img src="images/idea.gif" alt="question and answer"/>  <span>Share an Idea</span></a>
+		</div>
+		<div class="menu">
+			<a href="javascript:void(0)" id="reportIssue" class=" mainTabJS" title=""><img src="images/issue.gif" alt="question and answer"/> <span> Report an Issue</span></a>
+		</div>
+		<div class="menu">
+			<a href="javascript:void(0)" title="" id="addTestimonials" class=" mainTabJS"><img src="images/testimonials.gif" alt="question and answer"/>  <span>Add testimonials</span></a>
+		</div>
+		<div class="menu">
+			<a href="productLanding.html" title="" id="viewProducts" ><img src="images/products.gif" alt="question and answer"/> <span> Products</span></a>
+		</div>	
+        <div class="menu">
+			<a href="landingPageAdminView.html" title="" id="viewProducts" ><img src="images/products.gif" alt="question and answer"/> <span> Landing PAge admin view</span></a>
+		</div>		
+	</div>
+	
+	<div class="questionAreaWrapper" >
+    	 <img src="images/commentArrow.gif" class="commentArrow"/>	
+		<div class="questionArea">
+        
+		 <textarea style="width:99.7%" class="txtArea" > Write a Question and share it with the community</textarea>
+		 <input type="button"  value="Share" class="postButton" />
+         <div class="searchResultsBlock" >         	
+            <p>Does any one of these entries match your request?</p>
+            <div class="similarQuest">
+            	<a href="javascript:void(0)" class="detailsJS"><img src="images/question.gif" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</a>
+            </div>
+            <div class="similarQuest">
+            	<a href="javascript:void(0)" class="detailsJS"><img src="images/question.gif" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</a>
+            </div>
+            <div class="similarQuest">
+            	<a href="javascript:void(0)" class="detailsJS"><img src="images/question.gif" />Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</a>
+            </div>
+            <input type="button" value="Start over" class="startOver"/>
+            <input type="button" value="No. Submit my entry " class="postQuestion"/>
+         </div>
+		</div>		
+	</div>
+	<!-- main menu ends -->
+	<div class="contentSection" >
+		<!-- tab area-->
+		<div class="tabArea">
+			<div class="tabs">
+				<div class="selected tabJS" id="recentActivities"><span>Recent Activities</span><img src="images/tab_s.gif"/></div>
+				<div id="questions " class="tabJS"><span >Questions</span><img src="images/tab_ns.gif"/></div>
+				<div id="ideas"  class="tabJS"><span>Ideas</span><img src="images/tab_ns.gif"/></div>
+				<div id="issues"  class="tabJS"><span >Issues</span><img src="images/tab_ns.gif"/></div>
+				<div id="testimonials"  class="tabJS"><span >Testimonials</span><img src="images/tab_ns.gif"/></div>
+				<div id="products"  class="tabJS"><span >Products</span><img src="images/tab_ns.gif"/></div>                
+			</div>
+			<div class="tabcontent">
+                <iframe src="recentActivities.html" frameborder="0" class="homePagetabs" id="homePagetabs"></iframe> 
+			</div>
+		</div>
+		<!-- tab area ends -->
+		<!-- right colout -->
+		<div class="rightColout">
+			<div  class="promoBlock">
+				<div class="headingDiv" ><img src="images/community.jpg" /><span>Community Activity</span></div>
+				<div class="activity">
+			 		<div class="num">500</div><div class="topic">Topics</div>
+			    </div>
+				<div class="activity">
+			 		<div class="num">500</div><div class="topic">People</div>
+			    </div>
+				<div class="activity">
+			 		<div class="num">500</div><div class="topic">Moderators</div>
+			    </div>
+			</div>
+			<div  class="promoBlock">
+				<div class="headingDiv" ><img src="images/announcements.jpg"/><span>Announcement</span></div>
+				<div class="activityLinks">
+					<a href="announcementDetails.html" title="">Lorem ipsum dolor sit  Lorem ipsum dolor sit Lorem ipsum dolor sit  Lorem ipsum dolor sit... </a>
+					<span class="time">2 min ago</span>
+				</div>
+				<div class="activityLinks">
+					<a href="announcementDetails.html" title="">Lorem ipsum dolor sit  Lorem ipsum dolor sit Lorem ipsum dolor sit  Lorem ipsum dolor sit... </a>
+					<span class="time">2 min ago</span>
+				</div>
+				<div class="activityLinks">
+					<a href="announcementDetails.html" title="">Lorem ipsum dolor sit  Lorem ipsum dolor sit Lorem ipsum dolor sit  Lorem ipsum dolor sit... </a>
+					<span class="time">2 min ago</span>
+				</div>
+                <div class="seeAnnouncements"><a href="allAnnouncements.html">See all Announcements>></a></div>
+			</div>
+			
+			<div  class="promoBlock">
+				<div class="headingDiv" ><img src="images/leaderboard.jpg"/><span>Leaderboard</span></div>
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a>
+					 <div><img src="images/pointsIcon.jpg" class="pointsIcon" /> <span>56</span> pts</div>
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a>
+					 <div><img src="images/pointsIcon.jpg" class="pointsIcon" /> <span>56</span> pts</div>
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a>
+					 <div><img src="images/pointsIcon.jpg" class="pointsIcon" /> <span>56</span> pts</div>
+				</div>				
+			</div>
+			
+			<div  class="promoBlock">
+				<div class="headingDiv" ><img src="images/featuredMembers.jpg"/><span>Featured People</span></div>
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a> asked <a href="" class="question" title="">Lorem ipsum dolor sit  Lorem ipsum dolor sit Lorem ipsum dolor sit  Lorem...</a>					
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a> asked <a href="" class="question" title="">Lorem ipsum dolor sit  Lorem ipsum dolor sit Lorem ipsum dolor sit  Lorem...</a>					
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="" title="">Name</a> asked <a href="" class="question" title="">Lorem ipsum dolor sit  Lorem ipsum dolor sit Lorem ipsum dolor sit  Lorem...</a>					
+				</div>								
+			</div>
+			
+			<div  class="promoBlock">
+				<div class="headingDiv" ><img src="images/newMembers.jpg"/><span>New Members</span></div>
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a>					
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a>					 
+				</div>	
+				<div class="leaderboardBlock">
+					 <img src="images/user_placeholder.jpg" class="user"/>
+					 <a href="userProfile.html" title="">Name</a>					
+				</div>				
+			</div>
+			
+		</div>	
+		<!-- right colout ends -->
+	</div>
+	<!-- dialog box-->
+    <div class="questionDialog">
+    	<p>Ask your question</p>
+        Title:
+        <input type="text" vlaue="Enter you title here" class="titleBox"  />   
+        <br />  <br/>   <br/>   
+        Description:
+        <textarea  rows="7" class="txtArea_d">asdsa</textarea>
+        
+        <input type="button" value="Post" class="postbtn"/>
+        <input type="button" value="Cancel" class="cancelBtn"/>
+        
+        <div class="errorMsg">* Please enter title text</div>        
+   </div>
+   
+   <div class="questionDetails">
+   		<!-- load Post details page here -->       
+   </div>
+   <div class="overlay"></div>
+</div>
+
+</body>
+</html>

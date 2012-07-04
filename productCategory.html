@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="StyleSheet" href="css/styles.css" type="text/css" />
+<script src="js/jqueryJS.js" type="text/javascript" ></script>
+<script src="js/common.js" type="text/javascript" ></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var currentPosition = 0;
+  var slideWidth = 443;
+  var slides = $('.productImg');
+  var numberOfSlides = Math.ceil((slides.length)/4);    
+  manageControls(currentPosition);
+
+  // Create event listeners for .controls clicks
+  $('.control')
+    .bind('click', function(){
+    // Determine new position
+      currentPosition = ($(this).attr('id')=='rightControl')
+    ? currentPosition+1 : currentPosition-1;
+      // Hide / show controls
+      manageControls(currentPosition);
+	  //alert(currentPosition)
+      // Move slideInner using margin-left
+      $('#slideInner').animate({
+        'left' : slideWidth*(-currentPosition)
+      });
+    });
+
+  // manageControls: Hides and shows controls depending on currentPosition
+  function manageControls(position){
+    // Hide left arrow if position is first slide
+    if(position==0){ 
+		$('#leftControl').hide()		
+	 }
+    else{ $('#leftControl').show() }
+    // Hide right arrow if position is last slide
+    if(position==numberOfSlides-1){ $('#rightControl').hide() }
+    else{ $('#rightControl').show() }
+    }
+});
+</script>
+
+<style type="text/css">
+body {overflow:hidden;} /*This is handy for removing horizontal/vertical scrollbars as we won't need them if we autosize; */
+</style>
+</head>
+
+<body>
+
+<script type="text/javascript">
+FB.init({
+appId : '158662144268573',
+status : true, // check login status
+cookie : true, // enable cookies to allow the server to access the session
+xfbml : true // parse XFBML
+});
+
+window.fbAsyncInit = function() {
+FB.Canvas.setAutoResize();
+}
+
+</script>
+	
+<div class="wrapperDiv ">
+	<div class="logoDiv">
+	<img src="images/logo.gif" alt="acer" title="acer"/>
+    </div>    
+    <div class="navigation">
+    	<a href="landingPage.html">Back</a> <a href="productLanding.html">Back to Products</a>
+    </div> 
+    <div class="breadCrumb">
+    <h1>Notebooks</h1> 
+    </div>
+    <div  class="productCategory">
+    	<div class="categoryProduct">        	 
+            <div class="heading"><h2>Aspire</h2></div>
+            <div class="productsDiv">            
+            	<div class="leftArrow">&nbsp;<img src="images/arrow_lt.gif" class="control" id="leftControl"/></div>
+                <div class="productContainer">
+                	 <div id="slideInner">                     	
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p class="selected">Aspire</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Aspire</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Aspire</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Aspire</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Product</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Product</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Product</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Product</p>
+                        </div>
+                        <div class="productImg">
+                            <img src="images/productImage.jpg"/>
+                            <p>Product_3</p>
+                        </div>
+                     </div>
+                  
+                </div>
+                <div class="rightArrow">&nbsp;<img src="images/arrow_rt.gif" class="control" id="rightControl"/></div>
+            </div>
+            
+            
+            
+            
+            
+          
+        </div>
+        <div class="catDescription">
+        	<div class="heading"> <h2>Aspire</h2></div>
+            <div class="alignCenter">
+            	<img src="images/productImage.jpg" />               
+            </div>
+            <div class="prodDesc">
+            	 <p>
+                The new-generation Aspire TimelineX delivers 25% 
+longer battery1 life for up to 8 hours2, 3 of power -- 
+an entire day of multitasking and entertainment -- on 
+a single charge. This ultra-slender notebook is just 
+one-inch thin, yet still packs state-of-the-art 
+performance, an HD webcam and a widescreen for a 
+crisp view of digital life wherever you go!
+                </p>
+                <div class="productBtns" style="">
+                <input type="button" class="productBtn" value="Go to the series >"> 
+                <input type="button" value="Like" class="likeBtn">
+                <input type="button" value="Comment" class="productCommentBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="productComments">
+        <div class="announcementComments">
+                <div>
+                    <div class="user"  ><img src="images/user_placeholder.jpg"/></div>
+                    <div class="commentDescription">
+                        <div  class="name"> <a href="" title="">Name</a> <span class="postedTime" >June 6</span></div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a  href="" >Like</a> .&nbsp; &nbsp; <img src="images/like.gif"/> 2
+                     </div>
+                </div> 
+                  <div>
+                    <div class="user"  ><img src="images/user_placeholder.jpg"/></div>
+                    <div class="commentDescription">
+                        <div  class="name"> <a href="" title="">Name</a> <span class="postedTime" >June 6</span></div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a  href="" >Like</a> .&nbsp; &nbsp; <img src="images/like.gif"/> 2
+                     </div>
+                </div>
+            <div class="productComment">   
+            <input type="text" class="productCommentTxt"  value="Write about the product.." />    
+            </div> 
+        </div>
+                 	
+    </div>
+  
+    
+     <div  class=" ProductPromoBlock">
+				<div class="headingDiv" ><img src="images/productIcon.gif" /><span>Featured Products</span></div>
+				<div>
+                	<div class="FeaturedProduct">
+                    	<a href=""><img src="images/featuredProduct.png" class="floatLt" /> Name</a>
+                    	
+                    </div>
+                    <div class="FeaturedProduct"  >
+                    	<a href=""><img src="images/featuredProduct.png" class="floatLt" /> Name</a>
+                    	
+                    </div>
+                    <div  class="FeaturedProduct"  >
+                    	<a href=""><img src="images/featuredProduct.png" class="floatLt" /> Name</a>
+                    	
+                    </div>
+                    <div class="FeaturedProduct" >
+                    	<a href=""><img src="images/featuredProduct.png" class="floatLt" /> Name</a>
+                    	
+                    </div>
+                     <div class="FeaturedProduct" >
+                    	<a href=""><img src="images/featuredProduct.png" class="floatLt" /> Name</a>
+                    	
+                    </div>
+                </div>
+			</div>
+    <div class="navigation">
+    	<a href="landingPage.html">Back</a> <a href="productLanding.html">Back to Products</a>
+    </div>
+</div>
+	
+</body>
+</html>
